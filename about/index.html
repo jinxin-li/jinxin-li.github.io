@@ -459,415 +459,176 @@
                 <div class="introduction center-align" data-aos="fade-up">李金鑫，2020年硕士毕业后加入携程集团，长期负责广告投放（RTB/RTA/ADX）、营销推荐与数科场景的大数据建设。擅长数据仓库建模、指标体系设计、AB实验与因果推断，并持续推进大模型代理在数据研发中的落地。</div>
 
                 <style type="text/css">
-    #posts-chart,
-    #categories-chart,
-    #tags-chart {
+    .resume-section {
+        margin-top: 1.2rem;
+    }
+
+    .resume-card {
+        margin-top: 1rem;
+        border-radius: 8px;
+        padding: 1rem 1.2rem;
+        background: #fafafa;
+    }
+
+    .resume-card h5 {
+        margin: 0.2rem 0 0.8rem;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .resume-card h6 {
+        margin: 0.8rem 0 0.4rem;
+        font-weight: 600;
+        color: #34495e;
+    }
+
+    .resume-card p,
+    .resume-card li {
+        line-height: 1.8;
+        color: #455a64;
+    }
+
+    .resume-table {
         width: 100%;
-        height: 300px;
-        margin: 0.5rem auto;
-        padding: 0.5rem;
+        border-collapse: collapse;
+        margin-top: 0.6rem;
+    }
+
+    .resume-table th,
+    .resume-table td {
+        border: 1px solid #e0e0e0;
+        padding: 0.6rem;
+        text-align: left;
+    }
+
+    .resume-table th {
+        background: #f0f4f8;
     }
 </style>
 
-<div id="postCharts" class="post-charts">
+<div class="resume-section">
     <div class="title center-align" data-aos="zoom-in-up">
-        <i class="far fa-bar-chart"></i>&nbsp;&nbsp;文章统计图
+        <i class="fas fa-id-card"></i>&nbsp;&nbsp;个人简历
     </div>
-    <div class="row">
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="posts-chart"></div>
-        </div>
 
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="categories-chart"></div>
-        </div>
+    <div class="resume-card" data-aos="fade-up">
+        <h5>1. 个人简介</h5>
+        <p>
+            李金鑫，本人于 2020 年 6 月硕士毕业。毕业后加入携程集团，历任高级大数据开发工程师、资深大数据开发工程师，
+            目前任市场 BI 部门资深数据仓库主管，主要为广告投放（RTB、RTA、ADX）、营销业务、推荐与数科提供大数据支持。
+            性格稳重，善于沟通，保持强烈自驱力与学习热情。
+        </p>
+        <table class="resume-table">
+            <tr>
+                <th>电话（微信同号）</th>
+                <th>邮箱</th>
+            </tr>
+            <tr>
+                <td>18916388328</td>
+                <td>lijinxinok@163.com</td>
+            </tr>
+        </table>
+    </div>
 
-        <div class="chart col s12 m6 l4" data-aos="zoom-in-up">
-            <div id="tags-chart"></div>
-        </div>
+    <div class="resume-card" data-aos="fade-up">
+        <h5>2. 研究兴趣</h5>
+        <p>数据仓库、建模理论、因果推断、AB 实验、机器学习、预测模型、大模型代理。</p>
+    </div>
+
+    <div class="resume-card" data-aos="fade-up">
+        <h5>3. 教育背景</h5>
+        <table class="resume-table">
+            <tr>
+                <th>时间</th>
+                <th>学校</th>
+                <th>专业</th>
+            </tr>
+            <tr>
+                <td>2017-09 至 2020-07</td>
+                <td>华东理工大学</td>
+                <td>高分子化学与物理</td>
+            </tr>
+            <tr>
+                <td>2013-09 至 2017-06</td>
+                <td>青岛科技大学</td>
+                <td>英才实验班</td>
+            </tr>
+        </table>
+        <p>其他：GPA 前 20%，英语六级，学业一等奖学金，国家奖学金，数学建模国家三等奖。</p>
+    </div>
+
+    <div class="resume-card" data-aos="fade-up">
+        <h5>4. 工作经历</h5>
+        <ul>
+            <li><strong>2024-至今</strong>：携程集团有限公司（市场 BI）资深数据仓库主管</li>
+            <li><strong>2023</strong>：携程集团有限公司（市场 BI）资深大数据开发工程师</li>
+            <li><strong>2021</strong>：携程集团有限公司（市场 BI）高级大数据开发工程师</li>
+        </ul>
+    </div>
+
+    <div class="resume-card" data-aos="fade-up">
+        <h5>5. 项目经历</h5>
+
+        <h6>5.1 数据仓库整合建设</h6>
+        <ul>
+            <li>构建“数据域 + 业务线”主题化方案，梳理交易域、流量域、用户域、营销域等核心域。</li>
+            <li>引入大模型代理进行历史模型主题冷启动，历史表主题初始化准确率提升至 80%+。</li>
+            <li>重设计指标体系与模型流程，支持业务过程多对一映射，降低重复开发。</li>
+        </ul>
+
+        <h6>5.2 基于大模型的 ChatBI 指标问答系统</h6>
+        <ul>
+            <li>构建 Java + Python 的问答链路：问题解析、向量检索、Prompt 组装、LLM 回答。</li>
+            <li>统一沉淀指标与业务知识检索入口，提升内部查询效率与知识复用率。</li>
+        </ul>
+
+        <h6>5.3 用户画像投放系统构建</h6>
+        <ul>
+            <li>基于标签 Bitmap 布尔计算实现离线圈选，结合 ClickHouse 承担计算与存储。</li>
+            <li>覆盖预计算、正式计算、重算、上线/下线、结果推送等全流程能力。</li>
+            <li>累计支撑 1w+ 人群计算任务，平均耗时控制在 20 秒以内。</li>
+        </ul>
+
+        <h6>5.4 RTA 百亿数据仓库构建</h6>
+        <ul>
+            <li>面向日 600 亿级广告数据，采用 Flink + HiveCatalog + 拆队列 + 高并发消费架构。</li>
+            <li>通过范式建模减少明细层关联与 Shuffle 压力，提升集群稳定性与资源利用率。</li>
+            <li>日均节约成本约 3000 元。</li>
+        </ul>
+
+        <h6>5.5 行程规划 Agent（新增）</h6>
+        <ul>
+            <li>基于大模型 Agent 构建智能行程规划能力，支持多天行程自动生成与动态改写。</li>
+            <li>综合用户偏好、预算、交通耗时与景点营业时间进行多目标优化。</li>
+            <li>支持主计划 + 备选方案输出，提升可执行性与用户决策效率。</li>
+        </ul>
+    </div>
+
+    <div class="resume-card" data-aos="fade-up">
+        <h5>6. 个人技能</h5>
+        <ol>
+            <li>熟练使用 Java、Python、SQL、Shell。</li>
+            <li>熟悉 Hadoop、Hive、Spark、Flink、Hudi、Paimon、Kafka 等大数据框架。</li>
+            <li>熟练掌握数据仓库建模理论，具备从 0 到 1 构建离线与实时数仓能力。</li>
+            <li>熟悉 MySQL、Redis、HBase、SpringBoot、JDBC、Flask 等后端组件。</li>
+            <li>熟悉主流大模型 API 与基础部署，能够构建代理型应用。</li>
+            <li>掌握决策树、随机森林、线性/逻辑回归、K 聚类、神经网络等基础算法。</li>
+        </ol>
+    </div>
+
+    <div class="resume-card" data-aos="fade-up">
+        <h5>7. 发表与获奖</h5>
+        <ul>
+            <li>Li L, Li J, Liu L, et al. <em>ACS Applied Energy Materials</em>, 2019, 2(2): 1413-1418.</li>
+            <li>Li L, Wang X, Li J, et al. <em>Journal of Alloys and Compounds</em>, 2021, 872: 159562.</li>
+            <li>李金鑫：一种识别 Excel 表格中数据块智能算法（P22014839C，2022）。</li>
+            <li>李金鑫：一款基于 Office 工具实现自动化生成报告的软件（P22014835C，2022）。</li>
+            <li>李金鑫：一种自动寻找起始点互联网分析浏览路径及其浏览时长算法（申请中，2024）。</li>
+            <li>社区贡献：SQL 格式化工具 <a href="https://github.com/fourgold/sql-beautify" target="_blank">sql-beautify</a>（VSCode 插件 sqlbeautify）。</li>
+        </ul>
     </div>
 </div>
 
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script>
-    let postsChart = echarts.init(document.getElementById('posts-chart'));
-    let categoriesChart = echarts.init(document.getElementById('categories-chart'));
-    let tagsChart = echarts.init(document.getElementById('tags-chart'));
-
-    
-
-    let postsOption = {
-        title: {
-            text: '文章发布统计图',
-            top: -5,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'axis'
-        },
-        xAxis: {
-            type: 'category',
-            data: ["2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02"]
-        },
-        yAxis: {
-            type: 'value',
-        },
-        series: [
-            {
-                name: '文章篇数',
-                type: 'line',
-                color: ['#6772e5'],
-                data: [6,6,3,1,0,0,3,2,1,1,1,12,2],
-                markPoint: {
-                    symbolSize: 45,
-                    color: ['#fa755a','#3ecf8e','#82d3f4'],
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
-                    }]
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: '平均值'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    
-
-    let categoriesOption = {
-        title: {
-            text: '文章分类统计图',
-            top: -4,
-            x: 'center'
-        },
-        tooltip: {
-            trigger: 'item',
-            formatter: "{a} <br/>{b} : {c} ({d}%)"
-        },
-        series: [
-            {
-                name: '分类',
-                type: 'pie',
-                radius: '50%',
-                color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"tips","value":1},{"name":"spark","value":9},{"name":"flink","value":5},{"name":"git","value":1}],
-                itemStyle: {
-                    emphasis: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    };
-
-    
-
-    let tagsOption = {
-        title: {
-            text: 'TOP10 标签统计图',
-            top: -5,
-            x: 'center'
-        },
-        tooltip: {},
-        xAxis: [
-            {
-                type: 'category',
-                data: ["flink","spark","idea","lzo","interview","operator","source","sink","git","sparkSQL"]
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                type: 'bar',
-                color: ['#82d3f4'],
-                barWidth : 18,
-                data: [5,4,1,1,1,1,1,1,1,1],
-                markPoint: {
-                    symbolSize: 45,
-                    data: [{
-                        type: 'max',
-                        itemStyle: {color: ['#3ecf8e']},
-                        name: '最大值'
-                    }, {
-                        type: 'min',
-                        itemStyle: {color: ['#fa755a']},
-                        name: '最小值'
-                    }],
-                },
-                markLine: {
-                    itemStyle: {color: ['#ab47bc']},
-                    data: [
-                        {type: 'average', name: '平均值'}
-                    ]
-                }
-            }
-        ]
-    };
-
-    // render the charts
-    postsChart.setOption(postsOption);
-    categoriesChart.setOption(categoriesOption);
-    tagsChart.setOption(tagsOption);
-</script>
-
-
-                
-                
-<div class="my-projects">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-gift"></i>&nbsp;&nbsp;我的项目
-    </div>
-    <div class="row">
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" class="icon"
-                   style="background: linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)" target="_blank">
-                    <i class="fas fa-database"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" target="_blank">数据仓库整合建设</a>
-                </div>
-                <div class="info-desc">重构主题域与指标体系，基于大模型完成历史模型冷启动，显著提升建模规范化效率。</div>
-            </div>
-        </div>
-
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" class="icon"
-                   style="background: linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)" target="_blank">
-                    <i class="fas fa-robot"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" target="_blank">ChatBI 指标问答系统</a>
-                </div>
-                <div class="info-desc">Java + Python + 向量检索 + LLM，构建内部统一指标问答助手，提升知识检索与指标定位效率。</div>
-            </div>
-        </div>
-
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" class="icon"
-                   style="background: linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)" target="_blank">
-                    <i class="fas fa-user-friends"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" target="_blank">用户画像投放系统</a>
-                </div>
-                <div class="info-desc">基于标签 Bitmap 圈选与 ClickHouse 计算，支撑 1w+ 人群任务，平均计算耗时 20s 以内。</div>
-            </div>
-        </div>
-
-        <div class="col s12 m6 l4" data-aos="fade-up">
-            <div class="info center-align">
-                <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" class="icon"
-                   style="background: linear-gradient(to bottom right, #7E57C2 0%, #5E35B1 100%)" target="_blank">
-                    <i class="fas fa-route"></i>
-                </a>
-                <div class="info-title">
-                    <a href="https://www.yuque.com/jinxin.li/wiki/qiyq9bpg2aa65f7g" target="_blank">行程规划Agent</a>
-                </div>
-                <div class="info-desc">新增智能行程规划项目：结合用户偏好、预算与交通约束，自动生成多天行程与备选方案。</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-                
-
-                
-                
-<div class="my-skills">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fas fa-wrench"></i>&nbsp;&nbsp;我的技能
-    </div>
-    <div class="row">
-        
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 70%">
-                    <span>JavaSE</span>
-                </div>
-                <div class="skill-bar-percent">70%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 60%">
-                    <span>Flume</span>
-                </div>
-                <div class="skill-bar-percent">60%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 60%">
-                    <span>HBase</span>
-                </div>
-                <div class="skill-bar-percent">60%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 80%">
-                    <span>Spark</span>
-                </div>
-                <div class="skill-bar-percent">80%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 85%">
-                    <span>Flink</span>
-                </div>
-                <div class="skill-bar-percent">85%</div>
-            </div>
-        </div>
-        
-        
-        <div class="col s12 m6 l6" data-aos="fade-up">
-            <div class="skillbar">
-                <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 90%">
-                    <span>HiveSQL</span>
-                </div>
-                <div class="skill-bar-percent">90%</div>
-            </div>
-        </div>
-        
-        
-    </div>
-
-    
-
-    
-    <div class="other-skills chip-container" data-aos="zoom-in-up">
-        <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
-        <div class="tag-chips center-align">
-            
-            
-            <a href="/tags/idea/">
-                <span class="chip center-align waves-effect waves-light chip-default">idea</span>
-            </a>
-            
-            
-            
-            <a href="/tags/lzo/">
-                <span class="chip center-align waves-effect waves-light chip-default">lzo</span>
-            </a>
-            
-            
-            
-            <a href="/tags/interview/">
-                <span class="chip center-align waves-effect waves-light chip-default">interview</span>
-            </a>
-            
-            
-            
-            <a href="/tags/spark/">
-                <span class="chip center-align waves-effect waves-light chip-default">spark</span>
-            </a>
-            
-            
-            
-            <a href="/tags/operator/">
-                <span class="chip center-align waves-effect waves-light chip-default">operator</span>
-            </a>
-            
-            
-            
-            <a href="/tags/flink/">
-                <span class="chip center-align waves-effect waves-light chip-default">flink</span>
-            </a>
-            
-            
-            
-            <a href="/tags/source/">
-                <span class="chip center-align waves-effect waves-light chip-default">source</span>
-            </a>
-            
-            
-            
-            <a href="/tags/sink/">
-                <span class="chip center-align waves-effect waves-light chip-default">sink</span>
-            </a>
-            
-            
-            
-            <a href="/tags/git/">
-                <span class="chip center-align waves-effect waves-light chip-default">git</span>
-            </a>
-            
-            
-            
-            <a href="/tags/sparkSQL/">
-                <span class="chip center-align waves-effect waves-light chip-default">sparkSQL</span>
-            </a>
-            
-            
-            
-            <a href="/tags/sparkstreaming/">
-                <span class="chip center-align waves-effect waves-light chip-default">sparkstreaming</span>
-            </a>
-            
-            
-            
-            <a href="/tags/sparkStreaming/">
-                <span class="chip center-align waves-effect waves-light chip-default">sparkStreaming</span>
-            </a>
-            
-            
-            
-            <a href="/tags/structure/">
-                <span class="chip center-align waves-effect waves-light chip-default">structure</span>
-            </a>
-            
-            
-            
-            <a href="/tags/procedure/">
-                <span class="chip center-align waves-effect waves-light chip-default">procedure</span>
-            </a>
-            
-            
-        </div>
-    </div>
-    
-
-</div>
-
-                
-
-                
-                
 <div id="myGallery" class="my-gallery">
     <div class="title center-align" data-aos="zoom-in-up">
         <i class="far fa-image"></i>&nbsp;&nbsp;相册
