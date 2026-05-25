@@ -460,49 +460,73 @@
 
                 <style type="text/css">
     .resume-section {
-        margin-top: 1.2rem;
+        margin-top: 1.4rem;
     }
 
     .resume-card {
         margin-top: 1rem;
-        border-radius: 8px;
-        padding: 1rem 1.2rem;
-        background: #fafafa;
+        border: 1px solid #e9eef3;
+        border-radius: 12px;
+        padding: 1.1rem 1.25rem;
+        background: #ffffff;
+        box-shadow: 0 6px 18px rgba(32, 55, 90, 0.06);
     }
 
     .resume-card h5 {
-        margin: 0.2rem 0 0.8rem;
-        font-weight: 600;
-        color: #2c3e50;
+        margin: 0.1rem 0 0.9rem;
+        padding-bottom: 0.45rem;
+        border-bottom: 2px solid #edf2f7;
+        font-weight: 700;
+        color: #1f2d3d;
+        letter-spacing: 0.2px;
     }
 
     .resume-card h6 {
-        margin: 0.8rem 0 0.4rem;
+        margin: 1rem 0 0.5rem;
+        padding-left: 0.55rem;
+        border-left: 3px solid #5c6bc0;
         font-weight: 600;
-        color: #34495e;
+        color: #2d3e50;
     }
 
     .resume-card p,
     .resume-card li {
-        line-height: 1.8;
+        line-height: 1.9;
         color: #455a64;
+        margin: 0.2rem 0;
+    }
+
+    .resume-card ul,
+    .resume-card ol {
+        margin: 0.35rem 0 0.75rem 1.1rem;
     }
 
     .resume-table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 0.6rem;
+        margin-top: 0.55rem;
+        border-radius: 8px;
+        overflow: hidden;
     }
 
     .resume-table th,
     .resume-table td {
-        border: 1px solid #e0e0e0;
-        padding: 0.6rem;
+        border: 1px solid #e6ecf1;
+        padding: 0.62rem;
         text-align: left;
     }
 
     .resume-table th {
-        background: #f0f4f8;
+        background: #f6f9fc;
+        color: #2d3e50;
+    }
+
+    .project-item {
+        margin-bottom: 0.75rem;
+    }
+
+    .project-item:last-child {
+        margin-bottom: 0;
     }
 </style>
 
@@ -569,39 +593,49 @@
     <div class="resume-card" data-aos="fade-up">
         <h5>5. 项目经历</h5>
 
-        <h6>5.1 数据仓库整合建设</h6>
-        <ul>
-            <li>构建“数据域 + 业务线”主题化方案，梳理交易域、流量域、用户域、营销域等核心域。</li>
-            <li>引入大模型代理进行历史模型主题冷启动，历史表主题初始化准确率提升至 80%+。</li>
-            <li>重设计指标体系与模型流程，支持业务过程多对一映射，降低重复开发。</li>
-        </ul>
+        <div class="project-item">
+            <h6>5.1 行程规划 Agent</h6>
+            <ul>
+                <li>基于大模型 Agent 构建智能行程规划能力，支持多天行程自动生成与动态改写。</li>
+                <li>综合用户偏好、预算、交通耗时与景点营业时间进行多目标优化。</li>
+                <li>支持主计划 + 备选方案输出，提升可执行性与用户决策效率。</li>
+            </ul>
+        </div>
 
-        <h6>5.2 基于大模型的 ChatBI 指标问答系统</h6>
-        <ul>
-            <li>构建 Java + Python 的问答链路：问题解析、向量检索、Prompt 组装、LLM 回答。</li>
-            <li>统一沉淀指标与业务知识检索入口，提升内部查询效率与知识复用率。</li>
-        </ul>
+        <div class="project-item">
+            <h6>5.2 数据仓库整合建设</h6>
+            <ul>
+                <li>构建“数据域 + 业务线”主题化方案，梳理交易域、流量域、用户域、营销域等核心域。</li>
+                <li>引入大模型代理进行历史模型主题冷启动，历史表主题初始化准确率提升至 80%+。</li>
+                <li>重设计指标体系与模型流程，支持业务过程多对一映射，降低重复开发。</li>
+            </ul>
+        </div>
 
-        <h6>5.3 用户画像投放系统构建</h6>
-        <ul>
-            <li>基于标签 Bitmap 布尔计算实现离线圈选，结合 ClickHouse 承担计算与存储。</li>
-            <li>覆盖预计算、正式计算、重算、上线/下线、结果推送等全流程能力。</li>
-            <li>累计支撑 1w+ 人群计算任务，平均耗时控制在 20 秒以内。</li>
-        </ul>
+        <div class="project-item">
+            <h6>5.3 基于大模型的 ChatBI 指标问答系统</h6>
+            <ul>
+                <li>构建 Java + Python 的问答链路：问题解析、向量检索、Prompt 组装、LLM 回答。</li>
+                <li>统一沉淀指标与业务知识检索入口，提升内部查询效率与知识复用率。</li>
+            </ul>
+        </div>
 
-        <h6>5.4 RTA 百亿数据仓库构建</h6>
-        <ul>
-            <li>面向日 600 亿级广告数据，采用 Flink + HiveCatalog + 拆队列 + 高并发消费架构。</li>
-            <li>通过范式建模减少明细层关联与 Shuffle 压力，提升集群稳定性与资源利用率。</li>
-            <li>日均节约成本约 3000 元。</li>
-        </ul>
+        <div class="project-item">
+            <h6>5.4 用户画像投放系统构建</h6>
+            <ul>
+                <li>基于标签 Bitmap 布尔计算实现离线圈选，结合 ClickHouse 承担计算与存储。</li>
+                <li>覆盖预计算、正式计算、重算、上线/下线、结果推送等全流程能力。</li>
+                <li>累计支撑 1w+ 人群计算任务，平均耗时控制在 20 秒以内。</li>
+            </ul>
+        </div>
 
-        <h6>5.5 行程规划 Agent（新增）</h6>
-        <ul>
-            <li>基于大模型 Agent 构建智能行程规划能力，支持多天行程自动生成与动态改写。</li>
-            <li>综合用户偏好、预算、交通耗时与景点营业时间进行多目标优化。</li>
-            <li>支持主计划 + 备选方案输出，提升可执行性与用户决策效率。</li>
-        </ul>
+        <div class="project-item">
+            <h6>5.5 RTA 百亿数据仓库构建</h6>
+            <ul>
+                <li>面向日 600 亿级广告数据，采用 Flink + HiveCatalog + 拆队列 + 高并发消费架构。</li>
+                <li>通过范式建模减少明细层关联与 Shuffle 压力，提升集群稳定性与资源利用率。</li>
+                <li>日均节约成本约 3000 元。</li>
+            </ul>
+        </div>
     </div>
 
     <div class="resume-card" data-aos="fade-up">
